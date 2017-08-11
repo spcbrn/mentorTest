@@ -1,28 +1,47 @@
 Answer each question in a written format
 
 1. What does semantic HTML mean?
+    It describes using the markup elements in html to support/define what is happening
+    on the page.
 
 2. What is the box model?
+    The concept that when rendering a document, the browser will represent each element
+    as a box, and the CSS will determine the properties of that box.
 
 3. What is the difference between IDs and Classes?
+    Classes can be applied to multiple elements while IDs will define one specific
+    element.
 
 4. What does the z-index do?
+    It will inform the layering priority of elements on the page.
 
 5. Summarize what the keyword 'this' is used for?
+    It is used to reference a given context and/or current scope of a function or 
+    document.
 
 6. What is a callback?
+    It is when a function's return value is itself an invokable function.
 
 7. What is a closure?
+    A function inside a parent function that can access it's parent function's variables.
 
 8. How does prototype work?
+    It represents properties and methods that a given type of object will inherit when created.
 
 9. What is MVC?
+    MVC stands for model-view-controller and is the model or pattern behind most user interfaces.
 
 10. What is the component lifecycle?
+    It refers to the compiling/rendering process of a component (IE a React component);
+    initializing, getting data (props/state), populating the virtual dom, rendering to
+    the actual dom, and then responding to changes.
 
 11. What is REST?
+    REST stands for representational state transfer and is a standardized method of tranferring
+    stateless data between a web-client and server via HTTP.
 
 12. Name three ways of getting data from the URL using express
+    Params, queries and designated url paths.
 
 create table users (
 id serial,
@@ -33,9 +52,17 @@ email varchar(255)
 12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
 -Get all users:
+select * from users
 
 -Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+insert into users (id, name, email)
+values (12, 'your name', 'fake@fake.com')
 
 -Update the newly created user's name to 'Bobby Boy':
+update users
+set name = 'Bobby Boy'
+where id = 12
 
 -Delete the newly updated user:
+delete from users 
+where id = 12
