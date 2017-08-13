@@ -23,7 +23,7 @@ Answer each question in a written format
     It is when a function's return value is itself an invokable function.
 
 7. What is a closure?
-    A function inside a parent function that can access it's parent function's variables.
+    A function inside a parent function that can access it's parent function's full scope.
 
 8. How does prototype work?
     It represents properties and methods that a given type of object will inherit when created.
